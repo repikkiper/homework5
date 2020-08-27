@@ -19,11 +19,11 @@ public class Cat extends Animal {
 //        return move;
 //    }
 
-    public boolean swim(float distance) {
-        return distance <= swimLimit;
-    }
+//    public boolean swim(float distance) {
+    //    return distance <= swimLimit;
+    //}
 
-    public boolean jump(float distance) {
-        return distance <= jumpLimit;
-    }
+  //  public boolean jump(float distance) {
+//        return distance <= jumpLimit;
+//    }
 }

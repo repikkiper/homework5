@@ -9,7 +9,7 @@ public abstract class Animal {
 
     public boolean run(float distance) {
         boolean move = distance > 0 && distance <= runLimit;
-        if(move) {
+        if (move) {
             System.out.printf("%s success ran\n", this.name);
         } else {
             System.out.printf("%s failed ran\n", this.name);
@@ -17,7 +17,23 @@ public abstract class Animal {
         return move;
     }
 
-    public abstract boolean swim(float distance);
+    public boolean swim(float distance) {
+        boolean move = distance > 0 && distance <= runLimit;
+        if (move) {
+            System.out.printf("%s success swim\n", this.name);
+        } else {
+            System.out.printf("%s failed swim\n", this.name);
+        }
+        return move;
+    }
 
-    public abstract boolean jump(float distance);
+    public boolean jump(float distance) {
+        boolean move = distance > 0 && distance <= runLimit;
+        if (move) {
+            System.out.printf("%s success jump\n", this.name);
+        } else {
+            System.out.printf("%s failed jump\n", this.name);
+        }
+        return move;
+    }
 }
